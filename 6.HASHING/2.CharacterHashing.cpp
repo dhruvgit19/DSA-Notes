@@ -1,3 +1,4 @@
+// FOR 26 CHARACTERS : 
 // #include<bits/stdc++.h>
 // using namespace std;
 // int main(){
@@ -23,7 +24,7 @@
 
 
 
-
+// FOR ALL 256 CHARACTERS : 
 #include<bits/stdc++.h>
 using namespace std;
 int main(){

@@ -30,7 +30,6 @@ void printNTimes(int n) {
 /*
  Time Complexity: O(N)
  Space Complexity: O(N)  (recursive stack)
-*/
 
 ----------------------------------------------------------
 /* PRINT NAME N TIMES USING RECURSION
@@ -44,6 +43,7 @@ void printName(int n) {
     printName(n - 1);
 }
 
+/* 
 ----------------------------------------------------------
 /* PRINT 1 TO N USING RECURSION (BACKTRACKING)
 ----------------------------------------------------------*/
@@ -56,8 +56,9 @@ void print1ToN(int n) {
     cout << n << " ";
 }
 
+/*
 ----------------------------------------------------------
-/* PRINT N TO 1 USING RECURSION
+ PRINT N TO 1 USING RECURSION
 ----------------------------------------------------------*/
 
 void printNTo1(int n) {
@@ -68,6 +69,7 @@ void printNTo1(int n) {
     printNTo1(n - 1);
 }
 
+/*
 ----------------------------------------------------------
 /* SUM OF FIRST N NUMBERS (PARAMETERIZED RECURSION)
 ----------------------------------------------------------*/
@@ -80,6 +82,7 @@ void sumParameterized(int n, int sum) {
     sumParameterized(n - 1, sum + n);
 }
 
+/*
 ----------------------------------------------------------
 /* SUM OF FIRST N NUMBERS (FUNCTIONAL RECURSION)
 ----------------------------------------------------------*/
@@ -91,6 +94,7 @@ int sumFunctional(int n) {
     return n + sumFunctional(n - 1);
 }
 
+/*
 ----------------------------------------------------------
 /* FACTORIAL OF N NUMBERS
 ----------------------------------------------------------*/
@@ -106,7 +110,7 @@ int factorial(int n) {
  Example:
  factorial(4) = 4 * 3 * 2 * 1 = 24
 */
-
+/*
 ----------------------------------------------------------
 /* REVERSE AN ARRAY USING RECURSION
 ----------------------------------------------------------*/
@@ -118,7 +122,7 @@ void reverseArray(int arr[], int l, int r) {
     swap(arr[l], arr[r]);
     reverseArray(arr, l + 1, r - 1);
 }
-
+/*
 ----------------------------------------------------------
 /* CHECK PALINDROME STRING USING RECURSION
 ----------------------------------------------------------*/
@@ -132,7 +136,7 @@ bool isPalindrome(string &s, int l, int r) {
 
     return isPalindrome(s, l + 1, r - 1);
 }
-
+/*
 ----------------------------------------------------------
 /* FIBONACCI NUMBER USING RECURSION
 ----------------------------------------------------------*/
@@ -152,7 +156,7 @@ int fibonacci(int n) {
  Space Complexity: O(N)
  (Highly inefficient – optimized later using DP)
 */
-
+/*
 ----------------------------------------------------------
 /* IMPORTANT RECURSION TAKEAWAYS
 ----------------------------------------------------------
